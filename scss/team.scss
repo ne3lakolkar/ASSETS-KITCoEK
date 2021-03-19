@@ -1,0 +1,57 @@
+@import "common";
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #1c9772,
+    #009896,
+    #0096b6,
+    #0090ca,
+    #5686cf
+  );
+}
+.team {
+  text-align: center;
+  overflow: hidden;
+  align-content: center;
+}
+.col-lg-4 {
+  padding: 1.25em 1.25em;
+}
+.card {
+  background-color: white;
+  color: rgba(51, 57, 63, 1);
+  border-radius: 2em;
+  margin-bottom: 1em;
+  box-shadow: 0.25em 0.25em 1.5em -0.15em rgba(0, 0, 0, 0.6);
+  .card-title {
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 0.12em;
+  }
+  .card-text {
+    font-family: $open-sans;
+    padding: 0em;
+    margin: 0em;
+  }
+  .profile-container {
+    padding: 2em 3em 0em 3em;
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+#app {
+  a {
+    color: rgba(51, 57, 63, 1);
+    transition: color 0.15s ease-in-out;
+    &:hover {
+      color: rgba(51, 57, 63, 0.75);
+      text-decoration: none;
+    }
+  }
+  i {
+    font-size: 1.3em;
+  }
+}

@@ -1,0 +1,65 @@
+@media (max-width: 720px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+$montserrat: "Montserrat", sans-serif;
+$open-sans: "Open Sans", sans-serif;
+
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.15em;
+  }
+}
+
+.naav {
+  border-radius: 1em;
+  padding: 0.08em 1em;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    color: rgba(28, 151, 114, 0.75);
+    background-color: white;
+  }
+}
+
+.display-3 {
+  font-size: 5em;
+  font-family: $montserrat;
+  font-weight: bold;
+  letter-spacing: -3px;
+  line-height: 0.95em;
+}
+
+#footer {
+  h3 {
+    font-family: $open-sans;
+    font-size: 1.25em;
+    padding: 0.25em 0em;
+  }
+  i {
+    font-size: 1.25em;
+  }
+  p {
+    display: inline;
+    font-family: $open-sans;
+    font-size: 1em;
+    vertical-align: 0.05em;
+  }
+  a {
+    border: 0.1em white solid;
+    color: white;
+    border-radius: 1em;
+    padding: 0.25em 1em;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    &:hover {
+      background-color: white;
+      color: #343a40;
+      text-decoration: none;
+    }
+  }
+}
