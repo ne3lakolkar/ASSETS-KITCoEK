@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TEAM</title>
+    <!-- Required meta class="nav-link" tags -->
+    <meta class="nav-link" charset="utf-8">
+    <meta class="nav-link" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" integrity="sha384-avJt9MoJH2rB4PKRsJRHZv7yiFZn8LrnXuzvmZoD3fh1aL6aM6s0BBcnCvBe6XSD"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light container">
+        <a class="navbar-brand text-white" href="index.html">ASSETS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-5">
+                    <a class="naav" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="naav" href="team.html">TEAM</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="app">
+        <h1 class="display-3 text-white py-4 text-center">Meet The Team</h1>
+        <div class="container" id="heads">
+            <div class="team row">
+                <div class="col-lg-2"></div>
+                <head-component v-for="head in heads" :head="head" />
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <div class="team row" id="members">
+            <member-component v-for="member in members" :member="member" />
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white py-1" id="footer">
+        <div class="container">
+            <h3 class="py-2">Connect with us</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item pb-3">
+                    <a target="_blank" href="#">
+                        <i class="fab fa-github"></i>
+                        <p class="pl-2">view our work</p>
+                    </a>
+                </li>
+                <li class="list-inline-item pb-3">
+                    <a target="_blank" href="#">
+                        <i class="fab fa-facebook"></i>
+                        <p class="pl-2">follow us on facebook</p>
+                    </a>
+                </li>
+                <li class="list-inline-item pb-3">
+                    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfY1GES43vNm0q2-sBnzoK8-Em2WaEnbp_DZyV7YNeB2MY-LQ/viewform">
+                        <i class="far fa-envelope"></i>
+                        <p class="pl-2">mail us</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="vendor/vue/vue.js"></script>
+    <script type="text/javascript" src="js/team.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
